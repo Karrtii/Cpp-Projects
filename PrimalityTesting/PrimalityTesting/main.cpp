@@ -2,8 +2,24 @@
 #include <cmath>
 using namespace std;
 
+bool IsPrime(int num);
+
 int main()
 {
+	int input;
+
+	cout << "Please enter the number:" << endl;
+	cin >> input;
+
+	if (IsPrime(input) == true)
+	{
+		cout << input << " is a prime number" << endl;
+	}
+	else
+	{
+		cout << input << " is not a prime number" << endl;
+	}
+
 	return 0;
 }
 
